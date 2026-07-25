@@ -32,12 +32,13 @@ header{
 
 nav{
     display: flex;
-    justify-content: space-between;
     text-align: center;
 
     position: absolute;
     top: 15px;
     right: 30px;
+
+    gap: 15px;
 
 }
 
@@ -51,13 +52,42 @@ nav a{
     margin-left: 15px;
 }
 
+.mensagens{
+    position: relative;
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.badge-menu{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #9294f1c9;
+    color: white;
+    border: 1px solid white;
+
+    position: absolute;
+    top: -8px;
+    right: -8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
 /* Cards */
 
 .container{
     width: 1200px;
     height: 600px;
     margin: 80px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,320px);
     justify-content: space-between;
 }
 
@@ -109,6 +139,28 @@ nav a{
 .texto p{
     font-size: 16px;
     margin-top: 8px;
+}
+
+.whatsapp{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25D366;
+
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp img{
+    width: 35px;
 }
 
 /* Rodapé */
